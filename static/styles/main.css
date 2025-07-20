@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 24px 32px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+}
+
+.red {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #d32f2f; /* червоний для уваги */
+}
+
+.bold {
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+form {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input[type="text"] {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline-offset: 2px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 4px #1976d2;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #1976d2;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #1565c0;
+}
